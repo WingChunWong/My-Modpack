@@ -2,11 +2,8 @@ name: Build Modpack
 
 on:
   push:
-    branches: [ main, master ]     # 当推送到主分支时触发
-    paths-ignore:
-      - '*.md'
-      - '.gitignore'
-  workflow_dispatch:               # 允许手动触发
+    branches: [ main, master ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,36 +12,35 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Java (Packwiz needs Java 17+)
+      - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Install Packwiz
+      - name: Setup Go (1.24+ required)
+        uses: actions/setup-go@v5
+        with:
+          go-version: '>=1.24'
+
+      - name: Install Packwiz from source
         run: |
-          curl -L -o packwiz https://github.com/packwiz/packwiz/releases/latest/download/packwiz-linux-amd64
-          chmod +x packwiz
-          sudo mv packwiz /usr/local/bin/
+          echo "Compiling packwiz (dependencies will be downloaded)..."
+          go install github.com/packwiz/packwiz@latest
 
       - name: Refresh and validate
         run: packwiz refresh
 
       - name: Export to CurseForge
-        run: |
-          packwiz curseforge export -o curseforge-export.zip
-      - name: Export to Modrinth (optional)
-        run: |
-          packwiz modrinth export -o modrinth-export.zip
+        run: packwiz curseforge export -o curseforge-pack.zip
 
-      - name: Upload CurseForge artifact
+      - name: Export to Modrinth
+        run: packwiz modrinth export -o modrinth-pack.mrpack
+
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: curseforge-modpack
-          path: curseforge-export.zip
-
-      - name: Upload Modrinth artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: modrinth-modpack
-          path: modrinth-export.zip
+          name: modpack-exports
+          path: |
+            curseforge-pack.zip
+            modrinth-pack.mrpack
