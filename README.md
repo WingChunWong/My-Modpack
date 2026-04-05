@@ -1,4 +1,7 @@
 # My Modpack
+
+![Icon](/icon.png)
+
 这是一个自用的整合包，方便我随时下载下来玩。当然，也欢迎大家下载来玩呀。
 
 ## Modlist
