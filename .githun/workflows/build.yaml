@@ -1,0 +1,50 @@
+name: Build Modpack
+
+on:
+  push:
+    branches: [ main, master ]     # 当推送到主分支时触发
+    paths-ignore:
+      - '*.md'
+      - '.gitignore'
+  workflow_dispatch:               # 允许手动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java (Packwiz needs Java 17+)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install Packwiz
+        run: |
+          curl -L -o packwiz https://github.com/packwiz/packwiz/releases/latest/download/packwiz-linux-amd64
+          chmod +x packwiz
+          sudo mv packwiz /usr/local/bin/
+
+      - name: Refresh and validate
+        run: packwiz refresh
+
+      - name: Export to CurseForge
+        run: |
+          packwiz curseforge export -o curseforge-export.zip
+      - name: Export to Modrinth (optional)
+        run: |
+          packwiz modrinth export -o modrinth-export.zip
+
+      - name: Upload CurseForge artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: curseforge-modpack
+          path: curseforge-export.zip
+
+      - name: Upload Modrinth artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: modrinth-modpack
+          path: modrinth-export.zip
