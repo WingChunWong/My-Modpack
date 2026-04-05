@@ -1,0 +1,13 @@
+name = "Litematica-Printer (inprim)"
+filename = "litematica-printer-1.21-3.5.0-sakura.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "dab38e9218c991b715280be4c0fe6f0462b409af"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6847115
+project-id = 1312873

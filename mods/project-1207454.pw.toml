@@ -1,0 +1,13 @@
+name = "project-1207454"
+filename = "tweakeroo-fabric-1.21-0.21.61.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0abe7330be5d4d6c55f1a094ab639e64ea4c5816"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7415598
+project-id = 1207454

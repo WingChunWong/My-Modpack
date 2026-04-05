@@ -1,0 +1,13 @@
+name = "CozmoUI"
+filename = "§cC§6o§ez§am§bo§fUI_§7v0.1§0.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fc2da0f24a6dca7971d6783eec4f495a64f1ceb7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7488088
+project-id = 1437305
