@@ -18,7 +18,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Setup Go (1.24+ required)
+      - name: Setup Go
         uses: actions/setup-go@v5
         with:
           go-version: '>=1.24'
@@ -34,13 +34,9 @@ jobs:
       - name: Export to CurseForge
         run: packwiz curseforge export -o curseforge-pack.zip
 
-      - name: Export to Modrinth
-        run: packwiz modrinth export -o modrinth-pack.mrpack
-
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: modpack-exports
           path: |
             curseforge-pack.zip
-            modrinth-pack.mrpack
