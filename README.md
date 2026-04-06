@@ -16,6 +16,7 @@ This is a modpack for selfuse, uploaded for my own convenience to download and p
 ## Game details
 
 Game version/游戏版本: 1.21.11
+
 Modloader/模组加载器: Fabric
 
 ## Modlist
