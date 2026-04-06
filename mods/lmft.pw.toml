@@ -1,0 +1,13 @@
+name = "Load My F***ing Tags"
+filename = "lmft-1.1.1+1.21.11-fabric.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/67kVxsaO/versions/CvwvsqaY/lmft-1.1.1%2B1.21.11-fabric.jar"
+hash-format = "sha512"
+hash = "e7b23729599b9ea41dc52b684dcddfe0a8f4d624833418901eb8e5383258bd670bd23346f326cf3b8b558e1b22d1da68338a32c931ba8ed77942c25c795a417d"
+
+[update]
+[update.modrinth]
+mod-id = "67kVxsaO"
+version = "CvwvsqaY"

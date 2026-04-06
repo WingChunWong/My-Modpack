@@ -1,17 +1,13 @@
-name = "My Modpack"
+name = "My-Modpack"
 author = "WingChunWong"
 version = "1.0.0"
-description = "A modpack for selfuse"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "7b9ad3f00f483a96310bc6af3d4154ffb4489d689f66163c87eaf5b6d04ac00c"
+hash = "84122f891a3642edee37b88424258bec9166da345e979ac075a85fc50923bfea"
 
 [versions]
-fabric = "0.18.4"
-minecraft = "1.21.1"
-
-[options]
-acceptable-game-versions = []
+fabric = "0.18.6"
+minecraft = "1.21.11"

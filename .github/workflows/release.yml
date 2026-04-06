@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version'
+        required: true
+        default: '1.0.0'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - run: go install github.com/packwiz/packwiz@latest
+
+      - run: packwiz refresh
+
+      - run: |
+          packwiz modrinth export
+          mv *.mrpack "My-Modpack-${{ inputs.version || github.ref_name }}.mrpack"
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: My-Modpack ${{ inputs.version || github.ref_name }}
+          files: My-Modpack-*.mrpack
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

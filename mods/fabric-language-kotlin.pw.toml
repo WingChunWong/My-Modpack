@@ -3,11 +3,11 @@ filename = "fabric-language-kotlin-1.13.10+kotlin.2.3.20.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "9873294abf498f509453d37b0a5ba019f4570ffb"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Ha28R6CL/versions/21TRTKmh/fabric-language-kotlin-1.13.10%2Bkotlin.2.3.20.jar"
+hash-format = "sha512"
+hash = "e4eaf7594de08eb4f3ea8af2e939f3ee61d07597afb4d5f420c3fbadcb381c7bbad4b1afd5919b3087b73ed9636fb018b1c978858a112bd4f6acdcb42e9eedaa"
 
 [update]
-[update.curseforge]
-file-id = 7815918
-project-id = 308769
+[update.modrinth]
+mod-id = "Ha28R6CL"
+version = "21TRTKmh"

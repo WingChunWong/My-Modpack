@@ -1,1 +1,15 @@
+# Packwiz cache
+.packwiz/
+
+# Exported mrpack (CI generates these)
 *.mrpack
+
+# Downloaded mod jars (packwiz downloads these locally)
+mods/*.jar
+
+# Keep local mods (preserve flag)
+!mods/I18nUpdateMod-*.jar
+
+# OS files
+.DS_Store
+Thumbs.db
