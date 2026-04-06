@@ -86,4 +86,4 @@ Modloader/模组加载器: Fabric
 | --- | --- |
 | [Complementary Shaders - Unbound](https://modrinth.com/shader/R6NEzAwj) | EminGT |
 
-<details>
+</details>
