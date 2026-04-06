@@ -6,7 +6,7 @@ hash = "d0aab902644ab8d0cd3c3cc81dd6ba2f5f23f580a5c423cbda73dddcc15101d5"
 
 [[files]]
 file = ".github/workflows/release.yml"
-hash = "82bbd62d28f011b717ab87b9a9826001c1d61cb898704b06d45cf5a3dbdc20a6"
+hash = "2872cfb90850b694413f085411339aa2c5c69fcd1c4aa6a0756a2c68d7d3af74"
 
 [[files]]
 file = "1.21.11.txt"
@@ -18,7 +18,7 @@ hash = "28b0c51894328175609090e580c3cabb3e8b25b2243c1efca4209992cd67693e"
 
 [[files]]
 file = "README.md"
-hash = "1ea43bc37c5133a1517cef9e080c0be733a0229f83dec45b2585d04c7435f6f8"
+hash = "459dfafc2ac16d33469a6982125d27ffaf398bfb94e2aa22c3ab443b2aca832c"
 
 [[files]]
 file = "add-mods.sh"

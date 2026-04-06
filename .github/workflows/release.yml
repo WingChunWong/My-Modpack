@@ -35,7 +35,7 @@ jobs:
       - name: Export Modrinth & CurseForge
         run: |
           packwiz modrinth export
-          packwiz curseforge exports
+          packwiz curseforge export
 
       - uses: softprops/action-gh-release@v2
         with:
