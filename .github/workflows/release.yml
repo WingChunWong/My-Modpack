@@ -32,16 +32,10 @@ jobs:
 
       - run: packwiz refresh
 
-      - name: Export Modrinth
+      - name: Export Modrinth & CurseForge
         run: |
           packwiz modrinth export
-          ORIG=$(ls *.mrpack)
-          unzip "$ORIG" -d mrpack_tmp
-          mv mrpack_tmp/overrides/icon.png mrpack_tmp/icon.png 2>/dev/null || true
-          cd mrpack_tmp && zip -r ../My-Modpack-${{ inputs.version || github.ref_name }}.mrpack .
-          rm -rf mrpack_tmp "$ORIG"
-
-      - run: packwiz curseforge export
+          packwiz curseforge exports
 
       - uses: softprops/action-gh-release@v2
         with:
