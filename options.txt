@@ -1,0 +1,2 @@
+resourcePacks:["file/resourcepacks/§cC§6o§ez§am§bo§fUI_§7v0.1§0.zip","file/resourcepacks/§cCozyUI §6Ex §7v0.4 §0§k.zip","file/resourcepacks/§cCozyUI§b+ §7v1.10§c no-fonts §0.zip","file/resourcepacks/SPBR-20.zip"]
+incompatibleResourcePacks:[]
