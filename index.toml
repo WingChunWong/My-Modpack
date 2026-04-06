@@ -13,6 +13,10 @@ file = "1.21.11.txt"
 hash = "c96c377697a32ddb7fd46f3b6697994f7eb2c307dcc40ff255e7c696e59f95e7"
 
 [[files]]
+file = "CLAUDE.md"
+hash = "28b0c51894328175609090e580c3cabb3e8b25b2243c1efca4209992cd67693e"
+
+[[files]]
 file = "README.md"
 hash = "1ea43bc37c5133a1517cef9e080c0be733a0229f83dec45b2585d04c7435f6f8"
 
@@ -602,7 +606,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "6a6cd6dcc88a51df2a3c7c8642b24156bd8e60ca33a0bc8a769d40b9119d69fe"
+hash = "5bb42ca489b44eb934f19bede4c74bbdb9768bc5972bdf3c67466fbfef0852da"
 
 [[files]]
 file = "resourcepacks/cozmoui.pw.toml"
