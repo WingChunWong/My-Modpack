@@ -1,21 +1,20 @@
-name: Build and Release
+name: Release
 
 on:
   push:
-    branches: [ master ]
     tags: [ 'v*' ]
   workflow_dispatch:
     inputs:
       version:
         description: 'Release version'
-        required: false
-        default: ''
+        required: true
+        default: '1.0.0'
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -36,28 +35,17 @@ jobs:
       - name: Export Modrinth
         run: |
           packwiz modrinth export
-          # Move icon to mrpack root for Modrinth display
           ORIG=$(ls *.mrpack)
           unzip "$ORIG" -d mrpack_tmp
           mv mrpack_tmp/overrides/icon.png mrpack_tmp/icon.png 2>/dev/null || true
-          cd mrpack_tmp && zip -r ../My-Modpack-${{ inputs.version || github.run_number }}.mrpack .
+          cd mrpack_tmp && zip -r ../My-Modpack-${{ inputs.version || github.ref_name }}.mrpack .
           rm -rf mrpack_tmp "$ORIG"
 
-      - name: Export CurseForge
-        run: packwiz curseforge export
+      - run: packwiz curseforge export
 
-      - uses: actions/upload-artifact@v4
+      - uses: softprops/action-gh-release@v2
         with:
-          name: modpack
-          path: |
-            *.mrpack
-            *.zip
-
-      - name: Release
-        if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v2
-        with:
-          name: My-Modpack ${{ github.ref_name }}
+          name: My-Modpack ${{ inputs.version || github.ref_name }}
           files: |
             *.mrpack
             *.zip
