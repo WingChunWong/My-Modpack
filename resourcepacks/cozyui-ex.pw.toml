@@ -1,0 +1,13 @@
+name = "CozyUI Ex"
+filename = "§cCozyUI §6Ex §7v0.4 §0§k.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/jrC5r3Mp/versions/mcjK1sfe/%C2%A7cCozyUI%20%C2%A76Ex%20%C2%A77v0.4%20%C2%A70%C2%A7k.zip"
+hash-format = "sha512"
+hash = "09dd4ac68e78b0a70f556fcaa27a6f435d714c5e165fd1c4fa3a8cd8d31450dceba85ed0323e42dc0c55af88b5e6b448732c4bca4146d3d005e1fd45f8b33465"
+
+[update]
+[update.modrinth]
+mod-id = "jrC5r3Mp"
+version = "mcjK1sfe"

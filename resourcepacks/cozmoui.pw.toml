@@ -1,0 +1,13 @@
+name = "CozmoUI"
+filename = "§cC§6o§ez§am§bo§fUI_§7v0.1§0.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/9SjTnsC8/versions/Wk2QF8yW/%C2%A7cC%C2%A76o%C2%A7ez%C2%A7am%C2%A7bo%C2%A7fUI_%C2%A77v0.1%C2%A70.zip"
+hash-format = "sha512"
+hash = "90b4fb0c5f98221a49044270b05b1c9c6aa8c25587664d965581d282ae4024e2c0ac96b303d7b93ef4106540a13b117cb1cefdadef5377c343ef3c85f13ceba5"
+
+[update]
+[update.modrinth]
+mod-id = "9SjTnsC8"
+version = "Wk2QF8yW"
