@@ -1,13 +1,13 @@
 <div align=center>
     <h1>My Modpack</h1>
     <img src="icon.png" alt="Icon">
-    <small>A modpack for selfuse</small>
+    <sub>A modpack for selfuse</sub>
     <hr>
 </div>
 
-这是一个自用的整合包，上传上来是为了方便自己随时下载来玩。当然，也欢迎大家下载下来体验。<small>虽然说这个包没有修改什么内容</small>
+这是一个自用的整合包，上传上来是为了方便自己随时下载来玩。当然，也欢迎大家下载下来体验。<sub>虽然说这个包没有修改什么内容</sub>
 
-This is a modpack for selfuse, uploaded for my own convenience to download and play anytime. Of course, you're welcome to try it out. <small>Though this pack doesn't change much.</small>
+This is a modpack for selfuse, uploaded for my own convenience to download and play anytime. Of course, you're welcome to try it out. <sub>Though this pack doesn't change much.</sub>
 
 ## Modlist
 
