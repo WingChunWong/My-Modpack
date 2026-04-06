@@ -9,6 +9,13 @@
 
 This is a modpack for selfuse, uploaded for my own convenience to download and play anytime. Of course, you're welcome to try it out. <sub>Though this pack doesn't change much.</sub>
 
+<details><summary>Details/详情</summary>
+
+## Game details
+
+Game version/游戏版本: 1.21.11
+Modloader/模组加载器: Fabric
+
 ## Modlist
 
 | Mod/模组 | Author(s)/作者 |
@@ -63,15 +70,17 @@ This is a modpack for selfuse, uploaded for my own convenience to download and p
 
 ## Resourcepacks
 
-| Resourcepack/资源包 |
-| --- |
-| [CozmoUI](https://modrinth.com/resourcepack/9SjTnsC8) |
-| [CozyUI Ex](https://modrinth.com/resourcepack/jrC5r3Mp) |
-| [CozyUI+](https://modrinth.com/resourcepack/G5rf50k2) |
-| [SPBR](https://modrinth.com/resourcepack/aNcOVoD7) |
+| Resourcepack/资源包 | Author(s)/作者 |
+| --- | --- |
+| [CozmoUI](https://modrinth.com/resourcepack/9SjTnsC8) | Georgome. |
+| [CozyUI Ex](https://modrinth.com/resourcepack/jrC5r3Mp) | WhatDamon |
+| [CozyUI+](https://modrinth.com/resourcepack/G5rf50k2) | Fogg05, RIP 2025|
+| [SPBR](https://modrinth.com/resourcepack/aNcOVoD7) | NyaShulker |
 
 ## Shaderpacks
 
-| Shaderpack/光影包 |
-| --- |
-| [Complementary Shaders - Unbound](https://modrinth.com/shader/R6NEzAwj) |
+| Shaderpack/光影包 | Author(s)/作者 |
+| --- | --- |
+| [Complementary Shaders - Unbound](https://modrinth.com/shader/R6NEzAwj) | EminGT |
+
+<details>
