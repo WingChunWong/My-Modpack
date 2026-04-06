@@ -17,10 +17,6 @@ file = "README.md"
 hash = "6d91eb7c9a621f7b5578a0a550d40a0ec6140007d8f920e34ffbca55200b5b2c"
 
 [[files]]
-file = "add-mods.sh"
-hash = "dbd4785fab2ee9907cd3963c3ed5ce8ecaf0d43158b0fb2d8a7e6a386eee450a"
-
-[[files]]
 file = "config/ModernUI/bootstrap.properties"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 

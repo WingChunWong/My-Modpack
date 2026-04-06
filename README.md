@@ -60,3 +60,18 @@ This is a modpack for selfuse, uploaded for my own convenience to download and p
 | [YetAnotherConfigLib](https://modrinth.com/mod/1eAoo2KR) | isXander |
 | [Zoomify](https://modrinth.com/mod/w7ThoJFB) | isXander |
 | [libIPN](https://modrinth.com/mod/onSQdWhM) | Mirinimi |
+
+## Resourcepacks
+
+| Resourcepack/资源包 |
+| --- |
+| [CozmoUI](https://modrinth.com/resourcepack/9SjTnsC8) |
+| [CozyUI Ex](https://modrinth.com/resourcepack/jrC5r3Mp) |
+| [CozyUI+](https://modrinth.com/resourcepack/G5rf50k2) |
+| [SPBR](https://modrinth.com/resourcepack/aNcOVoD7) |
+
+## Shaderpacks
+
+| Shaderpack/光影包 |
+| --- |
+| [Complementary Shaders - Unbound](https://modrinth.com/shader/R6NEzAwj) |
