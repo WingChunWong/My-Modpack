@@ -1,8 +1,8 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/build.yml"
-hash = "c3102a0cb9541c32b5b0ae80a6625d725fec4fad7be9b072d02c37e8790f974f"
+file = ".github/workflows/release.yml"
+hash = "192b1667b02604e8641d44bf7ffb7eac029653e7134594c7b399ce4d9bd1f14f"
 
 [[files]]
 file = "1.21.11.txt"
@@ -11,6 +11,10 @@ hash = "c96c377697a32ddb7fd46f3b6697994f7eb2c307dcc40ff255e7c696e59f95e7"
 [[files]]
 file = "add-mods.sh"
 hash = "dbd4785fab2ee9907cd3963c3ed5ce8ecaf0d43158b0fb2d8a7e6a386eee450a"
+
+[[files]]
+file = "icon.png"
+hash = "d4bbbf92cd165500ba9be7f0154253d02ceae8dad11e544e48c557bc6b52d7e8"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -251,3 +255,7 @@ metafile = true
 file = "mods/zoomify.pw.toml"
 hash = "3ff0c2f005f2523f157b776f0e870494a8e8ec0ff77cb7e965c88b4e2090efdb"
 metafile = true
+
+[[files]]
+file = "文档.lnk"
+hash = "85a04feaa55240de2f08a68badc7c6134ffecfc23dd26190b6f658a433f4b783"
