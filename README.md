@@ -9,13 +9,14 @@
 
 这是一个自用的整合包，上传上来是为了方便自己随时下载来玩。当然，也欢迎大家下载下来体验。<sub>虽然说这个包没有修改什么内容</sub>
 
-This is a modpack for selfuse, uploaded for my own convenience to download and play anytime. Of course, you're welcome to try it out. <sub>Though this pack doesn't change much.</sub>s
+This is a modpack for selfuse, uploaded for my own convenience to download and play anytime. Of course, you're welcome to try it out. <sub>Though this pack doesn't change much.</sub>
 
 <details><summary>Details/详情</summary>
 
 ## Game details
 
 Game version/游戏版本: 1.21.11
+
 Modloader/模组加载器: Fabric
 
 ## Modlist
@@ -85,4 +86,4 @@ Modloader/模组加载器: Fabric
 | --- | --- |
 | [Complementary Shaders - Unbound](https://modrinth.com/shader/R6NEzAwj) | EminGT |
 
-<details>
+</details>
