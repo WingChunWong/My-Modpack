@@ -14,7 +14,7 @@ hash = "c96c377697a32ddb7fd46f3b6697994f7eb2c307dcc40ff255e7c696e59f95e7"
 
 [[files]]
 file = "README.md"
-hash = "6d91eb7c9a621f7b5578a0a550d40a0ec6140007d8f920e34ffbca55200b5b2c"
+hash = "1ea43bc37c5133a1517cef9e080c0be733a0229f83dec45b2585d04c7435f6f8"
 
 [[files]]
 file = "config/ModernUI/bootstrap.properties"
@@ -362,8 +362,8 @@ hash = "d2d3b3714284fd2683c121d80bf9662289c9bb2df7f0a0c80ec741cf8fd4c9b8"
 metafile = true
 
 [[files]]
-file = "mods/I18nUpdateMod-3.7.1-SNAPSHOT.jar"
-hash = "71aaeefe17ac770162e82dc59764303cd88e77bff4256f06f9bc82f458658662"
+file = "mods/I18nUpdateMod-3.7.0-SNAPSHOT-all.jar"
+hash = "ed27122c62dd72882c1d91d4fe3eda8feab28661c024eb1d4ca897389dbc5b10"
 preserve = true
 
 [[files]]
