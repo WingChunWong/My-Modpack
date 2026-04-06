@@ -370,9 +370,9 @@ hash = "d2d3b3714284fd2683c121d80bf9662289c9bb2df7f0a0c80ec741cf8fd4c9b8"
 metafile = true
 
 [[files]]
-file = "mods/I18nUpdateMod-3.7.0-SNAPSHOT-all.jar"
-hash = "ed27122c62dd72882c1d91d4fe3eda8feab28661c024eb1d4ca897389dbc5b10"
-preserve = true
+file = "mods/I18nUpdateMod.pw.toml"
+hash = "1d159dcdd8c8d4033402492a90b4b89b34b4a3bc02713bf33cbc5b6bbddec7ca"
+metafile = true
 
 [[files]]
 file = "mods/appleskin.pw.toml"
