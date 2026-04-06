@@ -17,6 +17,10 @@ file = "README.md"
 hash = "1ea43bc37c5133a1517cef9e080c0be733a0229f83dec45b2585d04c7435f6f8"
 
 [[files]]
+file = "add-mods.sh"
+hash = "dbd4785fab2ee9907cd3963c3ed5ce8ecaf0d43158b0fb2d8a7e6a386eee450a"
+
+[[files]]
 file = "config/ModernUI/bootstrap.properties"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
@@ -598,7 +602,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "4e6b5f5bdbf362f94ad72fc6efe4de237411b75da5c8bea03445208a5c4bb52e"
+hash = "6a6cd6dcc88a51df2a3c7c8642b24156bd8e60ca33a0bc8a769d40b9119d69fe"
 
 [[files]]
 file = "resourcepacks/cozmoui.pw.toml"
