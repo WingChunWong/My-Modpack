@@ -1,0 +1,13 @@
+{
+  "game": "minecraft",
+  "formatVersion": 1,
+  "versionId": "@version",
+  "name": "@name",
+  "summary": "专注于性能优化和视觉增强的Fabric整合包",
+  "files": [],
+  "dependencies": {
+    "minecraft": "1.21.11",
+    "fabric-loader": "0.16.9"
+  },
+  "icon": "icon.png"
+}

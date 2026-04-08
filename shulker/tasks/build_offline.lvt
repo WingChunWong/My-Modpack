@@ -1,0 +1,13 @@
+import shulker.modrinth
+flat ./src/mods %project.cache%/overrides/mods
+copy ./options.txt %project.cache%/overrides/options.txt false
+mrp r %project.cache%/overrides/mods
+copy ./src/config %project.cache%/overrides/config true
+copy ./src/resourcepacks %project.cache%/overrides/resourcepacks true
+copy ./src/shaderpacks %project.cache%/overrides/shaderpacks true
+mrp e %project.cache%/overrides %project.cache%/modrinth.index.json true
+ifr @version "%project.ver%" %project.cache%/modrinth.index.json
+ifr @name "%project.name%" %project.cache%/modrinth.index.json
+copy ./icon.png %project.cache%/icon.png false
+pkgr zip make %project.cache% "%project.output%%project.name%_%project.ver%_offline_autoGen.mrpack"
+delete %project.cache%

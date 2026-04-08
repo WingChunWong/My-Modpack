@@ -3,45 +3,25 @@ name: Release
 on:
   push:
     tags: [ 'v*' ]
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Release version'
-        required: true
-        default: '1.0.0'
 
 permissions:
   contents: write
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
+      - name: Build mrpack
+        run: ./srdk.exe build
 
-      - uses: actions/setup-go@v5
-        with:
-          go-version: '1.22'
-
-      - run: go install github.com/packwiz/packwiz@latest
-
-      - run: packwiz refresh
-
-      - name: Export Modrinth & CurseForge
-        run: |
-          packwiz modrinth export
-          packwiz curseforge export
+      - name: Build offline mrpack
+        run: ./srdk.exe build_offline
 
       - uses: softprops/action-gh-release@v2
         with:
-          name: My-Modpack ${{ inputs.version || github.ref_name }}
-          files: |
-            *.mrpack
-            *.zip
+          files: build/*.mrpack
+          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
