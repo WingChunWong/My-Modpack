@@ -1,6 +1,6 @@
 {
   "ProjectName": "My Modpack",
-  "Version": "1.0.1",
+  "Version": "1.0.3",
   "RootPath": "./src/",
   "OutPath": "./build/",
   "DefaultEnvVars": {}
